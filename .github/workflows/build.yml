@@ -48,6 +48,8 @@ jobs:
       - name: Gradle Wrapper Validation
         uses: gradle/actions/wrapper-validation@v3
 
+      - run: df -h
+
       # Setup Java 11 environment for the next steps
       - name: Setup Java
         uses: actions/setup-java@v3
